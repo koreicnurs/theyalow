@@ -1,0 +1,52 @@
+.footer {
+  background: #4c4c4c;
+  box-shadow: 0px -3px 6px 0px #000000;;
+
+  // .footer__logo
+
+  &__block {
+    padding-top: 3px;
+    padding-bottom: 4px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    padding-left: 7.3%;
+
+    @include sm {
+      padding: 0;
+    }
+  }
+
+
+  &__logo-img {
+    max-width: 70%;
+
+    @include sm {
+      width: 60%;
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 96px 0 0;
+    word-spacing: 1px;
+
+    @include sm {
+      padding: 0;
+    }
+  }
+}

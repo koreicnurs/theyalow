@@ -1,0 +1,78 @@
+%title-before {
+  content: '';
+  display: block;
+  width: 109px;
+  height: 95px;
+  background: url(../images/design.png) 50% no-repeat;
+  margin: 0 auto;
+}
+
+.suggest {
+  background: url(../images/suggest-bg.jpg) 0 0 repeat;
+  box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.45);
+  position: relative;
+
+  @include md-sm {
+    box-shadow: none;
+  }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  // .suggest__link-block
+
+  &__link-block {
+    color: #000000;
+    text-decoration: none;
+    border-right: 2px solid #d1d1d1;
+    padding-top: 48px;
+    padding-bottom: 29px;
+
+    &:last-child {
+      border-right: none;
+    }
+    
+    @include md-sm {
+      border: none;
+    }
+  }
+
+  // .suggest__text
+
+  &__text {
+    font-size: 27px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -1px;
+
+    &::before {
+      @extend %title-before;
+    }
+
+    @include md-sm {
+      font-size: 23px;
+    }
+  }
+
+  &__text--custm {
+    letter-spacing: 1px;
+    &::before {
+      @extend %title-before;
+      width: 92px;
+      background: url(../images/costomise.png) 50% no-repeat;
+    }
+  }
+
+  &__text--free {
+    letter-spacing: 1px;
+    &::before {
+      @extend %title-before;
+      width: 81px;
+      background: url(../images/free.png) 50% no-repeat;
+    }
+  }
+}
+

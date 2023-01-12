@@ -1,0 +1,41 @@
+@mixin sprite($x, $y) {
+  background: url(../images/sprite.png) $x $y no-repeat;
+}
+
+@mixin sprite-h-w ($x, $y) {
+  width: $x;
+  height: $y;
+}
+
+@mixin make-cols {
+  @for $i from 1 to 13 {
+    &-#{$i} {
+      width: percentage($i / 12); 
+    }
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+
+@mixin md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin md-sm {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

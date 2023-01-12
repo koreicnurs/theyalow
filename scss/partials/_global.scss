@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  background: #fff;
+  font-weight: 400;
+
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  @include make-cols;
+}
+
+.col-sm {
+  @include sm {
+    @include make-cols;
+  }
+}
+
+.col-md {
+  @include md {
+    @include make-cols;
+  }
+}
+
+.col-lg {
+  @include lg {
+    @include make-cols;
+  }
+}

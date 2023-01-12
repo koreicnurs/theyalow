@@ -1,0 +1,213 @@
+.header {
+  background: url(../images/main-bg.jpg) 50% no-repeat;
+  background-size: cover;
+  font-family: $notoSans;
+  text-transform: uppercase;
+
+  @include md-sm {
+    background: none;
+  }
+
+  @include md-sm {
+    background: url(../images/header-img.jpg) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  // .header__header-block
+
+  &__header-block {
+    padding-bottom: 92px;
+  }
+
+  // .header__top
+  
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    margin-bottom: 82px;
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include md-sm {
+      flex-wrap: nowrap;
+      padding-top: 5px;
+      justify-content: space-between;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    @include md-sm {
+      width: 27%;
+    }
+
+    @include sm {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // .header__link
+
+  &__link {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    padding-top: 34px;
+    padding-right: 170px;
+
+    @include lg {
+      padding: 0 15px;
+    }
+
+    @include md-sm {
+      display: none;
+    }
+  }
+
+  // .header__nav
+
+  &__nav {
+    align-self: center;
+
+    @include md-sm {
+      width: 60%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  // .header__nav-list
+
+  &__nav-list {
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    padding-left: 38px  !important;
+    
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 !important;
+    }
+  }
+
+  // .header__nav-elem
+
+  &__nav-elem {
+    display: inline-block;
+    padding: 0px 32px 0px 33px;
+    border-right: 1px solid #dcb105;
+    
+    
+    &:nth-child(1) {
+      background: url(../../../images/about-us.png) 0 50% no-repeat;
+      @include sm {
+        background: none;
+      }
+    }
+    
+    &:nth-child(2) {
+      background: url(../../../images/service.png) 0 50% no-repeat;
+      @include sm {
+        background: none;
+      }
+    } 
+
+    &:nth-child(3) {
+      background: url(../../../images/contact.png) 0 50% no-repeat;
+
+      @include sm {
+        background: none;
+      }
+    }
+    
+    @include md-sm {
+      padding: 0px 32px 0px 33px;
+    }
+
+    @include sm {
+      padding: 0;
+      border: none;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__nav-elem--last {
+    border-right: none;
+  }
+
+  // .header__nav-link
+
+  &__nav-link {
+    font-size: 17px;
+    text-decoration: none;
+    color: #9b7d08;
+    letter-spacing: -1px;
+    line-height: 40px;
+
+    @include md-sm {
+      font-style: 19px;
+    }
+  }
+
+  // .header__content
+
+  &__content {
+    display: flex;
+    padding: 0 12px;
+    flex-wrap: nowrap;
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    
+  }
+
+  // .header__img
+
+  &__img {
+    display: block;
+
+    @include lg {
+      margin: 0 auto;
+    }
+
+    @include md-sm{
+      display: none;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 63px;
+    letter-spacing: 1px;
+    width: 74%;
+    margin: 0 auto;
+    padding-top: 46px;
+    line-height: 78px;
+
+    @include md-sm{
+      display: none;
+    }
+  }
+
+  // .header__title--yellow
+
+  &__title--yellow {
+    color: #f5c506;
+  }
+}

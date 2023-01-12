@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+object,
+iframe,
+table,
+ul[class],
+ol[class],
+dl[class],
+dd[class],
+form,
+fieldset[class],
+legend[class],
+figure,
+figcaption,
+blockquote {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+ul[class] {
+	list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.3;
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+	overflow: visible;
+	-webkit-appearance: button;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	border-style: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: table;
+}
